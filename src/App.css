@@ -1,65 +1,63 @@
-:root{
-  --primary-blue: #0088cc;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap&family=Josefin+Sans&display=swap");
 
-
-.nav-item {
-  margin-right: 0.625rem !important;
-  margin-left: 0.625rem !important;
-}
-
-.nav-link {
-  border-top: 5px solid rgba(0,0,0,0);
-  color: #0088cc !important;
-}
-
-.nav-link:hover{
-  cursor: pointer;
-  border-top: 3px solid orange ;
-}
-
-.profile-picture{
-  width: 300px !important;
-  height: 300px !important;
-  border-radius: 50% !important;
-}
-
-.display-name{
-  
-  letter-spacing: 5px;
-  font-size: 54px;
-  background: radial-gradient(ellipse,var(--primary-blue), rgba(150,15,150,0.7));
-  font-weight: 700;
-  font-family: inherit;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.typed-text > span{
-  text-align: center;
-  width: auto;
-  font-size: 24px !important;
-  border: 0px solid white ;
-  outline: 0px;
-  padding: 0px;
+* {
   margin: 0px;
-  color: rgba(10,10,10,0.7);
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.confetti{
-  z-index: 2;
+
+:root {
+  --primary-blue-100: #0088cc;
+  --primary-green: #cedb00;
+  --primary-blue-bg: rgba(0, 136, 204, 0.8);
+  --primary-brown: #CC7100;
+  --primary-blue-200: #005580;
 }
 
-.about-picture{
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-}
-.jumbotron{
-  background-color: #fff !important;
+
+#journey,#home,#portfolio,#contact{
+  margin-top: 0px;
+  padding-top: 65px;
+
 }
 
-#about{
+#journey {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+#home {
+  padding-top: 85px;
+  width: 100vw;
+  padding-bottom: 65px;
+}
+
+#portfolio {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+
+#about {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.8),
+    rgba(200, 200, 200, 0.2)
+  );
+}
+
+span[class="carousel-control-next-icon"], span[class="carousel-control-prev-icon"]{
+  visibility: hidden;
+  background-color: transparent !important;
+  color:transparent !important;
+}
+
+ol[class="carousel-indicators"]{
+  display: none;
 }

@@ -1,0 +1,77 @@
+.displayImage {
+  height: 225px;
+  width: 275px;
+  border-radius: 15%;
+  object-fit: cover;
+}
+
+.sectionCaptionJourney {
+  margin-top: 34px;
+  text-align: center;
+  color: var(--primary-brown);
+  font-size: 56px;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0px;
+}
+
+.contentContainer {
+  position: relative;
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(100px);
+  grid-column: 1/2;
+  padding-right: 40px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: 2/3;
+}
+
+.contentContainer .imageWrapper:not(:nth-last-child(2)):after {
+  content:"";
+  position: absolute;
+  height: 100%;
+  top: 63%;
+  right: 515px;
+  border-left: 1px dashed #444; 
+}
+
+
+
+.imageWrapper::before {
+  position: absolute;
+  right: 500px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  content: "";
+}
+
+
+.imageWrapper {
+  position: relative;
+}
+
+.institution{
+  color: var(--primary-blue-200);
+}
+
+.natureOfWork{
+  color: green;
+}

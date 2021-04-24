@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./NavBar.css";
 export const NavBar = () => {
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-light mt-4"
-      style={{ backgroundColor: "#fff" }}
+    <nav id="navbar"
+      className="navbar navbar-expand-lg navbar-light navbar-fixed-top"
+      style={{ backgroundColor: "rgba(255,255,255,1)", zIndex:"999" }}
     >
       <div className="container">
         <button
@@ -20,9 +20,9 @@ export const NavBar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto ml-auto">
+          <ul className="navbar-nav mr-auto ml-auto" style={{background: "rgba(255,255,255)"}}>
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#home">
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
@@ -32,17 +32,17 @@ export const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#journey">
                 My Journey
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#portfolio">
                 Portfolio
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#home">
               Contact Me
               </a>
             </li>

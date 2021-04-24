@@ -1,0 +1,21 @@
+#navbar {
+  position: sticky;
+  top: 0;
+  height: auto;
+  width: 100% 
+}
+
+.nav-item {
+  margin-right: 0.625rem !important;
+  margin-left: 0.625rem !important;
+}
+
+.nav-link {
+  border-top: 5px solid rgba(0, 0, 0, 0);
+  color: var(--primary-blue-100) !important;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  border-top: 3px solid orange;
+}

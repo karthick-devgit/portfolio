@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
+import "./Home.css";
 export const ProfileCaption = () => {
   return (
     <div
@@ -21,13 +22,11 @@ export const ProfileCaption = () => {
       >
         Hey, I'm
       </h4>
-      <h1 className="display-name">KARTHICK</h1>
       <Typed
-        className="typed-text"
-        strings={["Learn.", "Unlearn.", "Relearn."]}
-        typeSpeed={80}
+        className="displayName"
+        strings={["KARTHICK"]}
+        typeSpeed={300}
         backSpeed={80}
-        loop
       ></Typed>
     </div>
   );

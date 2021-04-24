@@ -1,0 +1,27 @@
+.profilePicture {
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 50% !important;
+}
+
+.displayName > span {
+  letter-spacing: 5px;
+  font-size: 54px;
+  background: linear-gradient( to top left,
+    var(--primary-blue-200),
+    var(--primary-blue-100) 
+  );
+  font-weight: 700;
+  font-family: inherit;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.confetti {
+  z-index: 2;
+}
+
+.typed-cursor{
+  display: none;
+}
