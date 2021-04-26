@@ -1,10 +1,11 @@
 import React from "react";
 import "./NavBar.css";
-export const NavBar = () => {
+export const NavBar = ({ onClick }) => {
   return (
-    <nav id="navbar"
+    <nav
+      id="navbar"
       className="navbar navbar-expand-lg navbar-light navbar-fixed-top"
-      style={{ backgroundColor: "rgba(255,255,255,1)", zIndex:"999" }}
+      style={{ backgroundColor: "rgba(255,255,255,1)", zIndex: "999" }}
     >
       <div className="container">
         <button
@@ -20,31 +21,59 @@ export const NavBar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto ml-auto" style={{background: "rgba(255,255,255)"}}>
+          <ul
+            className="navbar-nav mr-auto ml-auto"
+            style={{ background: "rgba(255,255,255)" }}
+          >
             <li className="nav-item active">
-              <a className="nav-link" href="#home">
+              <span
+                className="nav-link"
+                onClick={() => {
+                  onClick("#home");
+                }}
+              >
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">
+              <span
+                className="nav-link"
+                onClick={() => {
+                  onClick("#about");
+                }}
+              >
                 About Me
-              </a>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#journey">
+              <span
+                className="nav-link"
+                onClick={() => {
+                  onClick("#journey");
+                }}
+              >
                 My Journey
-              </a>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#portfolio">
+              <span
+                className="nav-link"
+                onClick={() => {
+                  onClick("#portfolio");
+                }}
+              >
                 Portfolio
-              </a>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#home">
-              Contact Me
-              </a>
+              <span
+                className="nav-link"
+                onClick={() => {
+                  onClick("#home");
+                }}
+              >
+                Contact Me
+              </span>
             </li>
           </ul>
         </div>

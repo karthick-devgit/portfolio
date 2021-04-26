@@ -1,20 +1,40 @@
-import React from "react";
-import "./Portfolio.css"
-import { Carousel, Card } from "react-bootstrap";
+import { gsap, Power4, TweenMax } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
+import { Card, Carousel } from "react-bootstrap";
+import "./Portfolio.css";
 
 export const Portfolio = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  let carouselWrapper = useRef(null);
+  useEffect(() => {
+    TweenMax.from(carouselWrapper.current, {
+      duration: 1,
+      opacity: 0,
+      y: 20,
+      ease: Power4.easeIn,
+      scrollTrigger: {
+        trigger: carouselWrapper.current,
+        start: "top 75%",
+        end: "bottom bottom"
+      }
+    });
+  }, []);
+
   return (
     <section id="portfolio">
-      <h2 className="sectionCaptionPortfolio">What I Have Done So Far</h2>
-      <div className="carouselWrapper">
+      <h2 className="sectionCaptionPortfolio">What I Have Done</h2>
+      <div className="carouselWrapper" ref={carouselWrapper}>
         <Carousel className="carousel">
           <Carousel.Item>
             <Card className="carousel-card">
-              <Card.Img
-                className="carouselImage"
-                variant="top"
-                src="assets/images/dictionary.jpg"
-              />
+              <div className="card-image-container">
+                <Card.Img
+                  className="carouselImage"
+                  variant="top"
+                  src="assets/images/dictionary.jpg"
+                />
+              </div>
               <Card.Body>
                 <Card.Title className="cardTitle">
                   <h5>Dictionary</h5>
@@ -29,11 +49,13 @@ export const Portfolio = () => {
           </Carousel.Item>
           <Carousel.Item>
             <Card className="carousel-card">
-              <Card.Img
-                variant="top"
-                src="assets/images/music-player.jpg"
-                className="carouselImage"
-              />
+              <div className="card-image-container">
+                <Card.Img
+                  variant="top"
+                  src="assets/images/music-player.jpg"
+                  className="carouselImage"
+                />
+              </div>
               <Card.Body>
                 <Card.Title className="cardTitle">
                   <h5>Music Recommender System</h5>
@@ -48,11 +70,13 @@ export const Portfolio = () => {
           </Carousel.Item>
           <Carousel.Item>
             <Card className="carousel-card">
-              <Card.Img
-                variant="top"
-                src="assets/images/image-encryption.jpg"
-                className="carouselImage"
-              />
+              <div className="card-image-container">
+                <Card.Img
+                  variant="top"
+                  src="assets/images/image-encryption.jpg"
+                  className="carouselImage"
+                />
+              </div>
               <Card.Body>
                 <Card.Title className="cardTitle">
                   <h5>Image Encryption</h5>

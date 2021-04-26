@@ -13,6 +13,11 @@
   --primary-blue-bg: rgba(0, 136, 204, 0.8);
   --primary-brown: #CC7100;
   --primary-blue-200: #005580;
+  --primary-grey-bg: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.8),
+    rgba(200, 200, 200, 0.2)
+  );
 }
 
 
@@ -25,6 +30,7 @@
 #journey {
   width: 100vw;
   min-height: 100vh;
+  padding-bottom: 50px;
 }
 
 #home {
@@ -36,6 +42,7 @@
 #portfolio {
   width: 100vw;
   min-height: 100vh;
+  background: var(--primary-grey-bg);
 }
 
 
@@ -45,11 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.8),
-    rgba(200, 200, 200, 0.2)
-  );
+  background: var(--primary-grey-bg)
 }
 
 span[class="carousel-control-next-icon"], span[class="carousel-control-prev-icon"]{

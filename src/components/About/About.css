@@ -13,18 +13,28 @@
 }
 
 .aboutContent {
-  text-align: center;
-  color: rgba(10, 10, 10, 0.6);
-  font-size: 22px;
+  text-align: left;
+  color: rgba(10, 10, 10, 0.8);
+  font-size: 20px;
+  line-height: 35px;
   font-family: "Roboto";
 }
 
-.arsenal{
-  font-weight: bold;
-  color: black;
-  font-style: italic;
+.aboutContent > .strong-text {
+  text-align: center;
+  margin: 10px 0px;
 }
 
-.tools{
-  font-style: italic;
+.icon-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 70px);
+  grid-template-rows: minmax(64px, 70px);
+  column-gap: 80px;
+  row-gap: 15px;
+  justify-content: center
+}
+
+.icon > img {
+  height: 64px;
+  width: 64px;
 }
