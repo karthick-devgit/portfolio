@@ -11,7 +11,7 @@
   --primary-blue-100: #0088cc;
   --primary-green: #cedb00;
   --primary-blue-bg: rgba(0, 136, 204, 0.8);
-  --primary-brown: #CC7100;
+  --primary-brown: rgb(204, 113, 0);
   --primary-blue-200: #005580;
   --primary-grey-bg: linear-gradient(
     to bottom right,

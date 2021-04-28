@@ -1,5 +1,4 @@
 import React from "react";
-import Typed from "react-typed";
 import "./Home.css";
 export const ProfileCaption = () => {
   return (
@@ -13,6 +12,7 @@ export const ProfileCaption = () => {
       }}
     >
       <h4
+        className="hey-im"
         style={{
           color: "rgba(20,20,20,0.7)",
           fontFamily: "inherit",
@@ -22,12 +22,10 @@ export const ProfileCaption = () => {
       >
         Hey, I'm
       </h4>
-      <Typed
-        className="displayName"
-        strings={["KARTHICK"]}
-        typeSpeed={300}
-        backSpeed={80}
-      ></Typed>
+      <div className="nameContainer">
+        <div className="displayName1">KARTHICK</div>{" "}
+        <div className="displayName2">SANKAR</div>
+      </div>
     </div>
   );
 };

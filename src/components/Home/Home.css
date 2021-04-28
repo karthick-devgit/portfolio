@@ -1,27 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap');
+
 .profilePicture {
   width: 300px !important;
   height: 300px !important;
   border-radius: 50% !important;
 }
 
-.displayName > span {
-  letter-spacing: 5px;
-  font-size: 54px;
-  background: linear-gradient( to top left,
-    var(--primary-blue-200),
-    var(--primary-blue-100) 
+.displayName1, .displayName2 {
+  float: left;
+  font-size: 45px;
+  background: linear-gradient(
+    to top left,var(--primary-brown), rgba(204,113,0,0.8)
   );
-  font-weight: 700;
-  font-family: inherit;
+  margin: 0px 5px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .confetti {
   z-index: 2;
 }
 
-.typed-cursor{
+.typed-cursor {
   display: none;
 }

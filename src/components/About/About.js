@@ -10,7 +10,7 @@ export const About = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-   gsap.from(aboutContent.current, {
+    gsap.from(aboutContent.current, {
       duration: 2,
       opacity: 0,
       x: -30,
@@ -20,7 +20,7 @@ export const About = () => {
         start: "top center",
         end: "bottom bottom",
       },
-    })
+    });
     gsap.from(document.querySelectorAll(".icon"), {
       duration: 1,
       opacity: 0,
@@ -45,7 +45,7 @@ export const About = () => {
         start: "top center",
         end: "bottom bottom",
       },
-      delay: -1
+      delay: -1,
     });
   }, []);
 
@@ -68,11 +68,13 @@ export const About = () => {
                 I am a Computer Science and Engineering student currently
                 focussing on FrontEnd Web Development. I am pretty interested in
                 Computer Networking protocols and Architecture. I am a part of
-                Tamizh Literary Society. I have won several prizes in various
-                oratorical competitions
+                Tamizh Literary Society and have organized several intra college
+                cultural events.
               </p>
-              <div className="strong-text"><strong>Tools I have used</strong></div>
-              
+              <div className="strong-text">
+                <strong>Tools I have used</strong>
+              </div>
+
               <div className="icon-grid">
                 <span className="icon">
                   <img src="/assets/icons/reactjs.png" alt="logo" />
