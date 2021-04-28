@@ -4,6 +4,8 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overflow-x: hidden !important;
+
 }
 
 
@@ -21,10 +23,10 @@
 }
 
 
-#journey,#home,#portfolio,#contact{
+#journey, #about,#home,#portfolio,#contact{
   margin-top: 0px;
   padding-top: 65px;
-
+  min-height: 100vh;
 }
 
 #journey {
@@ -48,10 +50,6 @@
 
 #about {
   width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: var(--primary-grey-bg)
 }
 

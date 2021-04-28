@@ -14,7 +14,7 @@
   letter-spacing: 0px;
 }
 
-.contentContainer {
+.journeyContainer {
   position: relative;
   margin-top: 65px;
   display: grid;
@@ -42,7 +42,7 @@
   grid-column: 2/3;
 }
 
-.contentContainer .imageWrapper:not(:nth-last-child(2)):after {
+.journeyContainer .imageWrapper:not(:nth-last-child(2)):after {
   content:"";
   position: absolute;
   height: 100%;
@@ -74,4 +74,39 @@
 
 .natureOfWork{
   color: green;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .displayImage{
+    width: 175px;
+    height: 150px;    
+  }
+
+  .journeyContainer{
+    grid-template-columns: 100vw;
+  }
+
+  .left{
+    grid-column: 1/2;
+    padding-right: 0px; 
+    transform: none;
+  }
+
+  .right{
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left::before, .left::after, .right::before, .right::after{
+    content: none;
+  }
+
+  .sectionCaptionJourney{
+    font-size: 40px;
+  }
+  
 }

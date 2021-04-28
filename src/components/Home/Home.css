@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap");
+
+#home {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
 
 .profilePicture {
   width: 300px !important;
@@ -6,15 +13,37 @@
   border-radius: 50% !important;
 }
 
-.displayName1, .displayName2 {
+.profilePictureContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.profileCaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hey-im {
+  text-align: center;
+  color: rgba(20,20,20,0.7);
+  font-family: inherit;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.displayName1,
+.displayName2 {
   float: left;
   font-size: 45px;
   background: linear-gradient(
-    to top left,var(--primary-brown), rgba(204,113,0,0.8)
+    to top left,
+    var(--primary-brown),
+    rgba(204, 113, 0, 0.8)
   );
   margin: 0px 5px;
   font-weight: 600;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -23,6 +52,18 @@
   z-index: 2;
 }
 
-.typed-cursor {
-  display: none;
+
+@media screen and (max-width: 480px) and (min-width: 320px){
+  .profilePicture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .displayName1, .displayName2{
+    font-size: 30px;
+  }
+
+  .hey-im{
+    font-size: large;
+  }
 }

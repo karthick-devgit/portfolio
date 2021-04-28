@@ -50,78 +50,58 @@ export const About = () => {
   }, []);
 
   return (
-    <section id="about">
-      <div className="container">
-        <h2 className="sectionCaption">Who I am</h2>
-        <div className="row mt-5">
-          <div className="col-lg-1"></div>
-          <div
-            className="col-lg-5"
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-              display: "flex",
-            }}
-          >
-            <div className="aboutContent" ref={aboutContent}>
-              <p>
-                I am a Computer Science and Engineering student currently
-                focussing on FrontEnd Web Development. I am pretty interested in
-                Computer Networking protocols and Architecture. I am a part of
-                Tamizh Literary Society and have organized several intra college
-                cultural events.
-              </p>
-              <div className="strong-text">
-                <strong>Tools I have used</strong>
-              </div>
+    <section id="about" className="container">
+      <h2 className="sectionCaptionAbout">Who I am</h2>
+      <div className="aboutWrapper">
+        <div className="aboutContent" ref={aboutContent}>
+          <p>
+            I am a Computer Science and Engineering student currently focussing
+            on FrontEnd Web Development. I am pretty interested in Computer
+            Networking protocols and Architecture. I am a part of Tamizh
+            Literary Society and have organized several intra college cultural
+            events.
+          </p>
+          <div className="strong-text">
+            <strong>Tools I have used</strong>
+          </div>
 
-              <div className="icon-grid">
-                <span className="icon">
-                  <img src="/assets/icons/reactjs.png" alt="logo" />
-                </span>
-                <span className="icon">
-                  <img src="/assets/icons/html.png" alt="logo" />
-                </span>
-                <span className="icon">
-                  <img src="/assets/icons/css.png" alt="logo" />
-                </span>
-                <span className="icon">
-                  <img src="/assets/icons/javascript.png" alt="logo" />
-                </span>
-                <span className="icon">
-                  <img src="/assets/icons/java.png" alt="logo" />
-                </span>
-                <span className="icon">
-                  <img src="/assets/icons/python.png" alt="logo" />
-                </span>
-                <span className="icon">
-                  <img src="/assets/icons/rtl.png" alt="logo" />
-                </span>
-                <span className="icon">
-                  <img src="/assets/icons/jest.png" alt="logo" />
-                </span>
-                <span className="icon">
-                  <img src="/assets/icons/flutter.png" alt="logo" />
-                </span>
-              </div>
-            </div>
+          <div className="icon-grid">
+            <span className="icon">
+              <img src="/assets/icons/reactjs.png" alt="logo" />
+            </span>
+            <span className="icon">
+              <img src="/assets/icons/html.png" alt="logo" />
+            </span>
+            <span className="icon">
+              <img src="/assets/icons/css.png" alt="logo" />
+            </span>
+            <span className="icon">
+              <img src="/assets/icons/javascript.png" alt="logo" />
+            </span>
+            <span className="icon">
+              <img src="/assets/icons/java.png" alt="logo" />
+            </span>
+            <span className="icon">
+              <img src="/assets/icons/python.png" alt="logo" />
+            </span>
+            <span className="icon">
+              <img src="/assets/icons/rtl.png" alt="logo" />
+            </span>
+            <span className="icon">
+              <img src="/assets/icons/jest.png" alt="logo" />
+            </span>
+            <span className="icon">
+              <img src="/assets/icons/flutter.png" alt="logo" />
+            </span>
           </div>
-          <div className="col-lg-1"></div>
-          <div
-            className="col-lg-5"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <img
-              ref={aboutPicture}
-              className="aboutPicture"
-              src="/assets/images/about-picture.jpg"
-              alt="AboutPicture"
-            />
-          </div>
+        </div>
+        <div className="aboutPictureWrapper">
+          <img
+            ref={aboutPicture}
+            className="aboutPicture"
+            src="/assets/images/about-picture.jpg"
+            alt="AboutPicture"
+          />
         </div>
       </div>
     </section>
